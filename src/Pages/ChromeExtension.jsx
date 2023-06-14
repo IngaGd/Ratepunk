@@ -1,5 +1,19 @@
 import React from 'react';
+import Header from '../Components/Header';
 
 export default function ChromeExtension() {
-    return <div>CHROME EXTENSION</div>;
+    return (
+        <>
+            <div className="container header">
+                <div className="row">
+                    <Header />
+                </div>
+            </div>
+            <div className="container main">
+                <div className="row">
+                    <div>CONTENT OF CHROME EXTENSION PAGE</div>
+                </div>
+            </div>
+        </>
+    );
 }
