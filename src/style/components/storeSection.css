@@ -1,16 +1,75 @@
 .chrome,
 .apple {
     width: 312px;
-    margin-right: 16px;
+    height: 80px;
+    margin: 32px 0 32px 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    border: 1px solid var(--fourth-color);
+    border-radius: 16px;
+    color: var(--third-color);
+    padding-top: ;
+}
+
+.chrome {
+    margin-right: 16px;
 }
 
 .apple-reviews {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.icon {
+    position: relative;
+}
+
+.icon > .store {
+    width: 48px;
+    height: 48px;
+    background-color: yellow;
+    margin-right: 28px;
+}
+
+.icon > .coin {
+    width: 24px;
+    height: 24px;
+    background-color: var(--second-color);
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+
+.description > p,
+.description > h5 {
+    margin: 0; /* Remove the default margins */
+}
+
+p {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 20px;
+    font-family: var(--third-font-family);
+}
+
+.apple-reviews > span {
+    font-size: 20px;
+    color: var(--third-color);
+}
+
+.stars {
+    width: 105.2px;
+    height: 20px;
+    background-color: var(--third-color);
+    margin-left: 32px;
+    margin-right: 16px;
 }
 
 @media (max-width: 375px) {
