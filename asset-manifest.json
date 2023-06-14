@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ratepunk/static/css/main.4c92af46.css",
-    "main.js": "/ratepunk/static/js/main.cca20429.js",
+    "main.css": "/ratepunk/static/css/main.77ad0173.css",
+    "main.js": "/ratepunk/static/js/main.d6448bc4.js",
     "static/media/logo.png": "/ratepunk/static/media/logo.b64ff4edc13da62d564b.png",
     "index.html": "/ratepunk/index.html",
-    "main.4c92af46.css.map": "/ratepunk/static/css/main.4c92af46.css.map",
-    "main.cca20429.js.map": "/ratepunk/static/js/main.cca20429.js.map"
+    "main.77ad0173.css.map": "/ratepunk/static/css/main.77ad0173.css.map",
+    "main.d6448bc4.js.map": "/ratepunk/static/js/main.d6448bc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c92af46.css",
-    "static/js/main.cca20429.js"
+    "static/css/main.77ad0173.css",
+    "static/js/main.d6448bc4.js"
   ]
 }
