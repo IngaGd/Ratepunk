@@ -7,3 +7,22 @@
 .middle-content {
     width: 146px;
 }
+
+.copyright-mob {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    .left-content {
+        width: 100%;
+    }
+    .middle-content {
+        width: 138px;
+    }
+    .copyright-desktop {
+        display: none;
+    }
+    .copyright-mob {
+        display: contents;
+    }
+}
