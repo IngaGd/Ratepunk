@@ -13,6 +13,7 @@ export default function Form() {
             <form action="/">
                 <div className="cell-1">
                     <label htmlFor="email"></label>
+                    <i class="fa fa-envelope-o"></i>
                     <input
                         id="email"
                         type="email"
@@ -20,9 +21,9 @@ export default function Form() {
                     />
                 </div>
                 <div className="cell-1">
-                    <button className="form-btn">Get Referral Link</button>
+                    <button className="form-btn">Get referral link</button>
                 </div>
-                <div>Limits on max rewards apply.</div>
+                <span>Limits on max rewards apply.</span>
             </form>
         </div>
     );
