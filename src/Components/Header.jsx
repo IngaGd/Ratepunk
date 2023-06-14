@@ -4,11 +4,23 @@ import { Link } from 'react-router-dom';
 export default function Header() {
     return (
         <>
-            <div>
-                <Link to="/ratepunk">Ratepunk</Link>
-                <Link to="/chrome-extension">Chrome Extension</Link>
-                <Link to="/price-comparison">Price Comparison</Link>
-                <Link to="/blog">Blog</Link>
+            <div className="left">
+                <Link className="logo" to="/ratepunk">
+                    Ratepunk
+                </Link>
+            </div>
+            <div className="right">
+                <div className="nav-desktop">
+                    <Link className="link" to="/chrome-extension">
+                        Chrome Extension
+                    </Link>
+                    <Link className="link" to="/price-comparison">
+                        Price Comparison
+                    </Link>
+                    <Link className="link" to="/blog">
+                        Blog
+                    </Link>
+                </div>
             </div>
         </>
     );
