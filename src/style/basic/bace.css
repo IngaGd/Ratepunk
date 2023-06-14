@@ -1,0 +1,23 @@
+:root {
+    --first-color: #f8cc5d;
+    --second-color: #4eb3e3;
+    --third-color: #ffffff;
+    --fourth-color: #1f343e;
+    --fifth-color: #45565e;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 0.5px;
+}
