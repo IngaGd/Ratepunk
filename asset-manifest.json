@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/ratepunk/static/css/main.77ad0173.css",
-    "main.js": "/ratepunk/static/js/main.d6448bc4.js",
+    "main.css": "/ratepunk/static/css/main.7f65945c.css",
+    "main.js": "/ratepunk/static/js/main.b03b2f7a.js",
     "static/media/logo.png": "/ratepunk/static/media/logo.b64ff4edc13da62d564b.png",
+    "static/media/Group 12249@2x.png": "/ratepunk/static/media/Group 12249@2x.e881f9c30cd9c008e174.png",
+    "static/media/invitation@2x.png": "/ratepunk/static/media/invitation@2x.a6ba4e28ca52fd20b096.png",
     "index.html": "/ratepunk/index.html",
-    "main.77ad0173.css.map": "/ratepunk/static/css/main.77ad0173.css.map",
-    "main.d6448bc4.js.map": "/ratepunk/static/js/main.d6448bc4.js.map"
+    "main.7f65945c.css.map": "/ratepunk/static/css/main.7f65945c.css.map",
+    "main.b03b2f7a.js.map": "/ratepunk/static/js/main.b03b2f7a.js.map"
   },
   "entrypoints": [
-    "static/css/main.77ad0173.css",
-    "static/js/main.d6448bc4.js"
+    "static/css/main.7f65945c.css",
+    "static/js/main.b03b2f7a.js"
   ]
 }
