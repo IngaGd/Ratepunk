@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../style/components/footer.css';
 
 export default function Footer() {
     return (
         <>
             <div className="left-content">
                 <div className="logo">
+                    Logo
                     <img src="" alt="" />
                 </div>
                 <div className="desciption">
