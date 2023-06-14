@@ -1,13 +1,12 @@
 .container {
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 50px;
+    border-bottom: 1px solid var(--fourth-color);
 }
 
 .container > .row {
     display: flex;
-    width: 58%;
-    margin-left: calc(50% - 58% / 2);
+    width: 1112px;
+    margin-left: calc(50% - 1112px / 2);
 }
 
 @media (max-width: 375px) {
