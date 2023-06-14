@@ -17,7 +17,7 @@ export default function Header() {
             <div className="right">
                 <div className="nav-desktop">
                     <Link className="link" to="/chrome-extension">
-                        Chrome extension
+                        <span>Chrome extension</span>
                     </Link>
                     <Link className="link" to="/price-comparison">
                         Price comparison

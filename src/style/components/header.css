@@ -45,6 +45,10 @@
     color: var(--second-color);
 }
 
+span {
+    color: var(--second-color);
+}
+
 .nav-desktop {
     display: flex;
     justify-content: space-between;
