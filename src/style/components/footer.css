@@ -1,0 +1,9 @@
+.left-content {
+    width: 672px;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-content {
+    width: 146px;
+}

@@ -1,18 +1,20 @@
 import React from 'react';
+import '../style/components/infoSteps.css';
 
 export default function InfoSteps() {
     return (
         <>
             <div className="step">
-                <div>img</div>
-                <div>
+                <div className="img left">img</div>
+                <div className="description right">
                     <span>STEP 1</span>
                     <h2>INVITE FRIENDS</h2>
                     <p>Refer friends with your unique referral link.</p>
                 </div>
             </div>
             <div className="step">
-                <div>
+                <div className="img right">img</div>
+                <div className="description left">
                     <span>STEP 2</span>
                     <h2>COLLECT COINS</h2>
                     <p>
@@ -20,11 +22,10 @@ export default function InfoSteps() {
                         using your referral link.
                     </p>
                 </div>
-                <div>img</div>
             </div>
             <div className="step">
-                <div>img</div>
-                <div>
+                <div className="img left">img</div>
+                <div className="description right">
                     <span>STEP 3</span>
                     <h2>GET VOUCHER</h2>
                     <p>

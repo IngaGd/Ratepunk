@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style/components/storeSection.css';
 
 export default function StoreSection() {
     return (
