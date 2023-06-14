@@ -8,6 +8,7 @@
     --seveth-color: #f8f4f9;
     --main-font-family: 'Noto Sans', sans-serif;
     --second-font-family: 'Caveat Brush', cursive;
+    --third-font-family: 'gadugi-bold', sans-serif;
 }
 html {
     scroll-behavior: smooth;

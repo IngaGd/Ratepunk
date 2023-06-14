@@ -1,8 +1,9 @@
 .step {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 448px;
+    height: calc(669px / 3);
 }
 
 .step > .img > img {
