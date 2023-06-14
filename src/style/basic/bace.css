@@ -4,6 +4,9 @@
     --third-color: #ffffff;
     --fourth-color: #1f343e;
     --fifth-color: #45565e;
+    --sixth-color: #434a54;
+    --main-font-family: 'Noto Sans', sans-serif;
+    --second-font-family: 'Caveat Brush', cursive;
 }
 html {
     scroll-behavior: smooth;
@@ -18,6 +21,6 @@ body * {
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: var(--main-font-family);
     letter-spacing: 0.5px;
 }
