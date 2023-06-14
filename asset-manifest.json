@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ratepunk/static/css/main.e6c13ad2.css",
+    "main.js": "/ratepunk/static/js/main.20fbdc2e.js",
+    "index.html": "/ratepunk/index.html",
+    "main.e6c13ad2.css.map": "/ratepunk/static/css/main.e6c13ad2.css.map",
+    "main.20fbdc2e.js.map": "/ratepunk/static/js/main.20fbdc2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.20fbdc2e.js"
+  ]
+}
