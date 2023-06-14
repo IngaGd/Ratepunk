@@ -1,0 +1,19 @@
+.box-form {
+    width: 544px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+input,
+button {
+    width: 100%;
+}
+
+@media (max-width: 375px) {
+    .box-form {
+        width: 100%;
+    }
+}

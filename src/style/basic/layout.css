@@ -6,8 +6,8 @@
 
 .container > .row {
     display: flex;
-    width: 1112px;
-    margin-left: calc(50% - 1112px / 2);
+    width: 58%;
+    margin-left: calc(50% - 58% / 2);
 }
 
 @media (max-width: 375px) {

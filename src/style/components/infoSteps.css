@@ -1,0 +1,22 @@
+.step {
+    display: inline-block;
+    width: 100%;
+}
+
+.img.left,
+.description.left {
+    float: left;
+}
+
+.description.right,
+.img.right {
+    float: right;
+}
+
+.img {
+    width: 40%;
+}
+
+.description {
+    width: 60%;
+}

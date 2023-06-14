@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../style/components/header.css';
 
 export default function Header() {
     return (
@@ -20,6 +21,11 @@ export default function Header() {
                     <Link className="link" to="/blog">
                         Blog
                     </Link>
+                </div>
+                <div className="nav-mob">
+                    <button class="link">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
         </>
