@@ -11,3 +11,9 @@
         justify-content: center;
     }
 }
+
+/*custom style*/
+h1,
+h3 {
+    font-family: var(--second-font-family);
+}
