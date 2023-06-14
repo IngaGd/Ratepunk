@@ -1,3 +1,19 @@
 .left {
-    width: 616px;
+    width: 50%;
+}
+
+.nav-mob {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    .row {
+        justify-content: space-between;
+    }
+    .nav-desktop {
+        display: none;
+    }
+    .nav-mob {
+        display: flex;
+    }
 }

@@ -11,3 +11,9 @@ input,
 button {
     width: 100%;
 }
+
+@media (max-width: 375px) {
+    .box-form {
+        width: 100%;
+    }
+}

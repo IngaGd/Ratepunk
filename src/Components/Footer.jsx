@@ -17,7 +17,9 @@ export default function Footer() {
                     comparison, so you can be confident in knowing you’re
                     getting the best deal!
                 </div>
-                <div>&copy; 2021 Ratepunk. All Rights Reserved.</div>
+                <div className="copyright-desktop">
+                    &copy; 2021 Ratepunk. All Rights Reserved.
+                </div>
             </div>
             <div className="middle-content">
                 <h3>QUICK LINKS</h3>
@@ -53,6 +55,9 @@ export default function Footer() {
                         <img src="" alt="tiktok icon" />
                     </button>
                 </div>
+            </div>
+            <div className="copyright-mob">
+                &copy; 2021 Ratepunk. All Rights Reserved.
             </div>
         </>
     );

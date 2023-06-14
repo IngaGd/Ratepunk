@@ -2,4 +2,20 @@
 .apple {
     width: 312px;
     margin-right: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple-reviews {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 375px) {
+    .chrome,
+    .apple {
+        width: 100%;
+    }
 }

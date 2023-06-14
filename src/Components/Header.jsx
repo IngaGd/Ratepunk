@@ -22,6 +22,11 @@ export default function Header() {
                         Blog
                     </Link>
                 </div>
+                <div className="nav-mob">
+                    <button class="link">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
         </>
     );
