@@ -1,22 +1,22 @@
 .step {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 448px;
 }
 
-.img.left,
-.description.left {
-    float: left;
-}
-
-.description.right,
-.img.right {
-    float: right;
-}
-
-.img {
-    width: 40%;
+.step > .img > img {
+    width: 128px;
 }
 
 .description {
-    width: 60%;
+    font-size: 20px;
+}
+
+.description > span {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
 }
