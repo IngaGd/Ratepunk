@@ -6,9 +6,8 @@ export default function StoreSection() {
         <>
             <div className="chrome">
                 <div className="icon">
-                    icon
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+                    <img className="store" src="" alt="" />
+                    <img className="coin" src="" alt="" />
                 </div>
                 <div className="description">
                     <p>available in the</p>
@@ -17,9 +16,8 @@ export default function StoreSection() {
             </div>
             <div className="apple">
                 <div className="icon">
-                    icon
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+                    <img className="store" src="" alt="" />
+                    <img className="coin" src="" alt="" />
                 </div>
                 <div className="description">
                     <p>available in the</p>
@@ -28,10 +26,9 @@ export default function StoreSection() {
             </div>
             <div className="apple-reviews">
                 <div>
-                    stars
-                    <img src="" alt="" />
+                    <img className="stars" src="" alt="" />
                 </div>
-                <h4>Chrome Store reviews</h4>
+                <span>Chrome Store reviews</span>
             </div>
         </>
     );
