@@ -26,6 +26,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .icon {
@@ -51,16 +52,18 @@ h5 {
     font-family: var(--third-font-family);
 }
 
-.apple-reviews > span {
-    font-size: 20px;
-    margin-left: 169.21px;
+.apple-reviews {
     color: var(--third-color);
-}
-
-.fa-star {
-    color: var(--third-color);
-    width: 21.04px;
-    padding: 61.5px 0 62.5px 0;
+    .star {
+        color: var(--third-color);
+        width: 21.04px;
+        padding: 61.5px 0 62.5px 0;
+        margin-right: 4px;
+    }
+    .reviews {
+        font-size: 20px;
+        margin-left: 12px;
+    }
 }
 
 @media (max-width: 375px) {

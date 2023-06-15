@@ -24,9 +24,11 @@ export default function StoreSection() {
             </div>
             <div className="apple-reviews">
                 {[...Array(5)].map((_, index) => (
-                    <i class="fa fa-star" />
+                    <span className="star" key={index}>
+                        &#9733;
+                    </span>
                 ))}
-                <span>Chrome Store reviews</span>
+                <div className="reviews">Chrome Store reviews</div>
             </div>
         </>
     );
