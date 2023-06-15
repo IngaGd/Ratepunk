@@ -25,9 +25,10 @@ export default function StoreSection() {
                 </div>
             </div>
             <div className="apple-reviews">
-                <div>
-                    <img className="stars" src="" alt="" />
-                </div>
+                <i class="fa fa-star" />
+                <i class="fa fa-star" />
+                <i class="fa fa-star" />
+                <i class="fa fa-star" />
                 <span>Chrome Store reviews</span>
             </div>
         </>
