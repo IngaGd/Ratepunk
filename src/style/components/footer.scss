@@ -2,10 +2,72 @@
     width: 672px;
     display: flex;
     flex-direction: column;
+    margin-top: 64px;
+    .desciption {
+        margin-top: 32px;
+        width: 544px;
+    }
+    .copyright-desktop {
+        margin-top: 46px;
+        margin-bottom: 58px;
+    }
 }
 
 .middle-content {
-    width: 146px;
+    width: 256px;
+    margin-top: 65px;
+    h3 {
+        margin-bottom: 24px;
+    }
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        .link {
+            margin-top: 0;
+            margin-bottom: 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    }
+}
+
+.right-content {
+    width: 192px;
+    margin-top: 65px;
+    h3 {
+        margin-bottom: 24px;
+    }
+    .mail {
+        display: flex;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: var(--fourth-color);
+            font-size: 16px;
+            margin-left: 16px;
+        }
+        margin-bottom: 69px;
+    }
+    .lower-content {
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+            .icons {
+                width: 32px;
+                background-color: var(--second-color);
+                border: 1px solid var(--fourth-color);
+                border-radius: 8px;
+                // padding: 8px;
+                img {
+                    height: 16px;
+                    margin: 7px;
+                }
+            }
+            .icons:hover {
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 .copyright-mob {

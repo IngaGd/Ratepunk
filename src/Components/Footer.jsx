@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../style/components/footer.scss';
+import Logo from './Logo';
+
+import icon1 from '../assets/instagram.svg';
+import icon2 from '../assets/facebook.svg';
+import icon3 from '../assets/linkedin.svg';
+import icon4 from '../assets/twitter.svg';
+import icon5 from '../assets/tiktok.svg';
+import emailImg from '../assets/email-footer.svg';
 
 export default function Footer() {
     return (
         <>
             <div className="left-content">
-                <div className="logo">
-                    Logo
-                    <img src="" alt="" />
-                </div>
+                <Logo />
                 <div className="desciption">
                     Ratepunk compares hotel room prices across the major online
                     travel agencies. When you search for a room, Ratepunk
@@ -22,38 +27,52 @@ export default function Footer() {
                 </div>
             </div>
             <div className="middle-content">
-                <h3>QUICK LINKS</h3>
+                <h3>Quick links</h3>
                 <div className="nav-footer">
-                    <Link to="/price-comparison">Price Comparison</Link>
-                    <Link to="/chrome-extension">Chrome Extension</Link>
-                    <Link to="/how-it-works">How It Works</Link>
-                    <Link to="/blog">Ratepunk Blog</Link>
-                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link className="link" to="/price-comparison">
+                        <span>Price Comparison</span>
+                    </Link>
+                    <Link className="link" to="/chrome-extension">
+                        Chrome Extension
+                    </Link>
+                    <Link className="link" to="/how-it-works">
+                        How It Works
+                    </Link>
+                    <Link className="link" to="/blog">
+                        Ratepunk Blog
+                    </Link>
+                    <Link className="link" to="/privacy-policy">
+                        Privacy Policy
+                    </Link>
                 </div>
             </div>
             <div className="right-content">
                 <div className="upper-content">
-                    <h3>CONTACT</h3>
-                    <img src="" alt="" />
-                    <a href="mailto:hi@ratepunk.com">hi@ratepunk.com</a>
+                    <h3>Contact</h3>
+                    <div className="mail">
+                        <img src={emailImg} alt="" />
+                        <a href="mailto:hi@ratepunk.com">hi@ratepunk.com</a>
+                    </div>
                 </div>
                 <div className="lower-content">
-                    <h3>SOCIAL</h3>
-                    <button>
-                        <img src="" alt="instagram icon" />
-                    </button>
-                    <button>
-                        <img src="" alt="facebook icon" />
-                    </button>
-                    <button>
-                        <img src="" alt="linkedin icon" />
-                    </button>
-                    <button>
-                        <img src="" alt="twitter icon" />
-                    </button>
-                    <button>
-                        <img src="" alt="tiktok icon" />
-                    </button>
+                    <h3>Social</h3>
+                    <div className="icon-container">
+                        <button className="icons">
+                            <img src={icon1} alt="instagram icon" />
+                        </button>
+                        <button className="icons">
+                            <img src={icon2} alt="facebook icon" />
+                        </button>
+                        <button className="icons">
+                            <img src={icon3} alt="linkedin icon" />
+                        </button>
+                        <button className="icons">
+                            <img src={icon4} alt="twitter icon" />
+                        </button>
+                        <button className="icons">
+                            <img src={icon5} alt="tiktok icon" />
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="copyright-mob">
