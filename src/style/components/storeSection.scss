@@ -18,6 +18,10 @@
     margin-right: 16px;
 }
 
+.apple {
+    margin-right: 32px;
+}
+
 .apple-reviews {
     display: flex;
     flex-direction: row;
@@ -49,14 +53,15 @@ h5 {
 
 .apple-reviews > span {
     font-size: 20px;
+    margin-left: 169.21px;
     color: var(--third-color);
 }
 
-/* .stars {
+.fa-star {
     color: var(--third-color);
-    margin-left: 32px;
-    margin-right: 16px;
-} */
+    width: 21.04px;
+    padding: 61.5px 0 62.5px 0;
+}
 
 @media (max-width: 375px) {
     .chrome,
