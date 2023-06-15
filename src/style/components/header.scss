@@ -14,26 +14,6 @@
     display: none;
 }
 
-.logo-container {
-    font-family: var(--second-font-family);
-    font-size: 24px;
-    width: 125px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 32px;
-}
-
-.logo {
-    text-decoration: none;
-    color: var(--fourth-color);
-}
-
-.logo-container > img {
-    height: 100%;
-}
-
 .link {
     text-transform: capitalize;
     text-decoration: none;

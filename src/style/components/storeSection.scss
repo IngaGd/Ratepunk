@@ -12,42 +12,36 @@
     border: 1px solid var(--fourth-color);
     border-radius: 16px;
     color: var(--third-color);
-    padding-top: ;
+    text-decoration: none;
 }
 
 .chrome {
     margin-right: 16px;
 }
 
+.apple {
+    margin-right: 32px;
+}
+
 .apple-reviews {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .icon {
-    position: relative;
+    .store {
+        width: 48px;
+    }
 }
 
-.icon > .store {
-    width: 48px;
-    height: 48px;
-    background-color: yellow;
-    margin-right: 28px;
-}
-
-.icon > .coin {
-    width: 24px;
-    height: 24px;
-    background-color: var(--second-color);
-    position: absolute;
-    top: -10px;
-    left: 30px;
-}
-
-.description > p,
-.description > h5 {
-    margin: 0; /* Remove the default margins */
+.description {
+    margin-left: 20px;
+    p,
+    h5 {
+        margin: 0;
+    }
 }
 
 p {
@@ -59,16 +53,19 @@ h5 {
     font-family: var(--third-font-family);
 }
 
-.apple-reviews > span {
-    font-size: 20px;
+.apple-reviews {
     color: var(--third-color);
+    .star {
+        color: var(--third-color);
+        width: 21.04px;
+        padding: 61.5px 0 62.5px 0;
+        margin-right: 4px;
+    }
+    .reviews {
+        font-size: 20px;
+        margin-left: 12px;
+    }
 }
-
-/* .stars {
-    color: var(--third-color);
-    margin-left: 32px;
-    margin-right: 16px;
-} */
 
 @media (max-width: 375px) {
     .chrome,

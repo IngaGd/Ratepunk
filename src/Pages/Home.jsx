@@ -5,7 +5,7 @@ import Header from '../Components/Header';
 import InfoSteps from '../Components/InfoSteps';
 import StoreSection from '../Components/StoreSection';
 
-import '../style/pages/home.css';
+import '../style/pages/home.scss';
 
 export default function Home() {
     return (
