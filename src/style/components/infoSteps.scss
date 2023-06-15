@@ -6,8 +6,12 @@
     height: calc(669px / 3);
 }
 
-.step > .img > img {
-    width: 128px;
+.step {
+    .img {
+        img {
+            width: 128px;
+        }
+    }
 }
 
 .description {

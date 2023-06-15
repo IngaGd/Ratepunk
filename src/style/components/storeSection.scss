@@ -12,7 +12,6 @@
     border: 1px solid var(--fourth-color);
     border-radius: 16px;
     color: var(--third-color);
-    padding-top: ;
 }
 
 .chrome {
@@ -29,25 +28,31 @@
     position: relative;
 }
 
-.icon > .store {
-    width: 48px;
-    height: 48px;
-    background-color: yellow;
-    margin-right: 28px;
+.icon {
+    .store {
+        width: 48px;
+        height: 48px;
+        background-color: yellow;
+        margin-right: 28px;
+    }
 }
 
-.icon > .coin {
-    width: 24px;
-    height: 24px;
-    background-color: var(--second-color);
-    position: absolute;
-    top: -10px;
-    left: 30px;
+.icon {
+    .coin {
+        width: 24px;
+        height: 24px;
+        background-color: var(--second-color);
+        position: absolute;
+        top: -10px;
+        left: 30px;
+    }
 }
 
-.description > p,
-.description > h5 {
-    margin: 0; /* Remove the default margins */
+.description {
+    p,
+    h5 {
+        margin: 0;
+    }
 }
 
 p {

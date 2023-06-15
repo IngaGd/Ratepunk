@@ -30,8 +30,10 @@
     color: var(--fourth-color);
 }
 
-.logo-container > img {
-    height: 100%;
+.logo-container {
+    img {
+        height: 100%;
+    }
 }
 
 .link {

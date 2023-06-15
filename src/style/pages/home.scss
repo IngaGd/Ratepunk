@@ -1,14 +1,13 @@
 @media (max-width: 375px) {
-    .container.main > .row,
-    .container.store > .row,
-    .container.footer > .row {
-        display: flex;
-        flex-direction: column;
-    }
-    .container.main > .row,
-    .container.store > .row {
-        align-items: center;
-        justify-content: center;
+    .container.main,
+    .container.store,
+    .container.footer {
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 

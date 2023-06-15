@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/components/infoSteps.css';
+import '../style/components/infoSteps.scss';
 import img1 from '../images/invitation/invitation@2x.png';
 import img2 from '../images/Group 12249/Group 12249@2x.png';
 import img3 from '../images/gift-card/gift-card@2x.png';
