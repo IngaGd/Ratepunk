@@ -25,30 +25,13 @@
 }
 
 .icon {
-    position: relative;
-}
-
-.icon {
     .store {
         width: 48px;
-        height: 48px;
-        background-color: yellow;
-        margin-right: 28px;
-    }
-}
-
-.icon {
-    .coin {
-        width: 24px;
-        height: 24px;
-        background-color: var(--second-color);
-        position: absolute;
-        top: -10px;
-        left: 30px;
     }
 }
 
 .description {
+    margin-left: 20px;
     p,
     h5 {
         margin: 0;

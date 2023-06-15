@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../style/components/header.scss';
-import logoImg from '../images/logo/logo.png';
+import logoImg from '../assets/logo.svg';
 
 export default function Header() {
     return (
         <>
             <div className="left">
                 <div className="logo-container">
-                    <img src={logoImg} alt="Ratepunk logo" />
                     <Link className="logo" to="/ratepunk">
-                        Ratepunk
+                        <img src={logoImg} alt="Ratepunk logo" />
                     </Link>
                 </div>
             </div>
