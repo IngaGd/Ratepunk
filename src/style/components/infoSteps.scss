@@ -25,3 +25,12 @@
 h2 {
     font-size: 32px;
 }
+
+@media (max-width: 375px) {
+    .right-content {
+        width: 100%;
+        .step {
+            width: 100%;
+        }
+    }
+}

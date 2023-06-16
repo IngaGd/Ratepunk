@@ -77,9 +77,15 @@
 @media (max-width: 375px) {
     .left-content {
         width: 100%;
+        .desciption {
+            width: 100%;
+        }
     }
     .middle-content {
-        width: 138px;
+        width: 100%;
+    }
+    .lower-content {
+        width: 100%;
     }
     .copyright-desktop {
         display: none;
