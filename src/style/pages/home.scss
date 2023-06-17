@@ -1,17 +1,3 @@
-@media (max-width: 375px) {
-    .container.main,
-    .container.store,
-    .container.footer {
-        .row {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-    }
-}
-
 /*CUSTOM STYLES*/
 
 /*Headers*/
@@ -30,11 +16,10 @@ h3 {
 /* main-section start*/
 .container.main {
     background-color: var(--first-color);
-    .left-content {
+    .box-form {
         margin-top: 64px;
         margin-bottom: 64px;
     }
-
     .right-content {
         /* width: calc(976px * 100% / 1920px); */
         margin-left: calc(128 / 1920 * 100%);

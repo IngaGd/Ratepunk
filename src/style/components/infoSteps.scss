@@ -4,9 +4,6 @@
     align-items: center;
     width: 448px;
     height: calc(669px / 3);
-}
-
-.step {
     .img {
         img {
             width: 128px;
@@ -26,11 +23,11 @@ h2 {
     font-size: 32px;
 }
 
-@media (max-width: 375px) {
-    .right-content {
-        width: 100%;
-        .step {
-            width: 100%;
-        }
-    }
-}
+// @media (max-width: 375px) {
+//     .right-content {
+//         width: 100%;
+//         .step {
+//             width: 100%;
+//         }
+//     }
+// }

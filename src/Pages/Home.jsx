@@ -11,15 +11,15 @@ export default function Home() {
     return (
         <>
             <div className="container header">
-                <div className="row">
+                <div className="row header">
                     <Header />
                 </div>
             </div>
             <div className="container main">
                 <div className="row">
-                    <div className="left-content">
-                        <Form />
-                    </div>
+                    {/* <div className="left-content"> */}
+                    <Form />
+                    {/* </div> */}
                     <div className="right-content">
                         <InfoSteps />
                     </div>

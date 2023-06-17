@@ -13,7 +13,7 @@ import emailImg from '../assets/email-footer.svg';
 export default function Footer() {
     return (
         <>
-            <div className="left-content">
+            <div className="left-column">
                 <Logo />
                 <div className="desciption">
                     Ratepunk compares hotel room prices across the major online
@@ -26,7 +26,7 @@ export default function Footer() {
                     &copy; 2021 Ratepunk. All Rights Reserved.
                 </div>
             </div>
-            <div className="middle-content">
+            <div className="middle-column">
                 <h3>Quick links</h3>
                 <div className="nav-footer">
                     <Link className="link" to="/price-comparison">
@@ -46,7 +46,7 @@ export default function Footer() {
                     </Link>
                 </div>
             </div>
-            <div className="right-content">
+            <div className="right-column">
                 <div className="upper-content">
                     <h3>Contact</h3>
                     <div className="mail">
