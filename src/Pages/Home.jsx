@@ -17,9 +17,9 @@ export default function Home() {
             </div>
             <div className="container main">
                 <div className="row">
-                    {/* <div className="left-content"> */}
-                    <Form />
-                    {/* </div> */}
+                    <div className="left-content">
+                        <Form />
+                    </div>
                     <div className="right-content">
                         <InfoSteps />
                     </div>

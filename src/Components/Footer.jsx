@@ -14,7 +14,9 @@ export default function Footer() {
     return (
         <>
             <div className="left-column">
-                <Logo />
+                <div className="logo-container">
+                    <Logo />
+                </div>
                 <div className="desciption">
                     Ratepunk compares hotel room prices across the major online
                     travel agencies. When you search for a room, Ratepunk

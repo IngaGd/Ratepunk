@@ -4,11 +4,11 @@ import Routes from './Components/Routes';
 
 function App() {
     return (
-        <div>
+        <>
             <Router>
                 <Routes />
             </Router>
-        </div>
+        </>
     );
 }
 

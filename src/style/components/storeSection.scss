@@ -67,31 +67,31 @@ h5 {
     }
 }
 
-@media (max-width: 375px) {
-    .container.store {
-        .row {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            .chrome {
-                margin: 0;
-            }
-            .apple {
-                margin: 0;
-            }
-            .apple-reviews {
-                .star {
-                    color: var(--third-color);
-                    width: 16.83px;
-                    padding: 0;
-                    margin-right: 4px;
-                }
-                .reviews {
-                    font-size: 16px;
-                    margin-left: 12px;
-                }
-            }
-        }
-    }
-}
+// @media (max-width: 375px) {
+//     .container.store {
+//         .row {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             .chrome {
+//                 margin: 0;
+//             }
+//             .apple {
+//                 margin: 0;
+//             }
+//             .apple-reviews {
+//                 .star {
+//                     color: var(--third-color);
+//                     width: 16.83px;
+//                     padding: 0;
+//                     margin-right: 4px;
+//                 }
+//                 .reviews {
+//                     font-size: 16px;
+//                     margin-left: 12px;
+//                 }
+//             }
+//         }
+//     }
+// }

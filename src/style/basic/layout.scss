@@ -33,24 +33,18 @@
         .row {
             width: 100%;
             margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
-        .row.header {
-            // margin: 0;
-            // padding: 0;
-            // display: flex;
-            // flex-direction: row;
-            // align-items: center;
-            // justify-content: center;
+    }
+    .container.header {
+        .row {
             .left {
                 width: 100%;
             }
-            // .nav-mob {
-            //     display: flex;
-            // }
             .right {
                 .nav-desktop {
                     display: none;
@@ -60,45 +54,49 @@
     }
     .container.main {
         .row {
-            .box-form {
-                margin: 32px 0 0 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                width: 343px;
-                padding: 32px 16px 31px 16px;
-                h1 {
-                    font-size: 32px;
-                    margin-bottom: 24px;
-                    font-weight: 400;
-                }
-                p {
-                    font-size: 16px;
-                    margin-bottom: 24px;
-                    letter-spacing: 0px;
-                }
-                form {
-                    width: 100%;
-                    input,
-                    .form-btn {
-                        margin: 0;
+            .left-content {
+                width: 100%;
+                .box-form {
+                    margin: 32px 0 0 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 343px;
+                    padding: 32px 16px 31px 16px;
+                    h1 {
+                        font-size: 32px;
+                        margin-bottom: 24px;
+                        font-weight: 400;
+                    }
+                    p {
                         font-size: 16px;
-                        padding-top: 18px;
-                        padding-bottom: 16px;
-                        border: 1px solid var(--fourth-color);
-                        border-radius: 8px;
+                        margin-bottom: 24px;
+                        letter-spacing: 0px;
                     }
-                    .form-btn {
-                        margin-top: 16px;
-                        margin-bottom: 71px;
-                    }
-                    span {
-                        margin: 0;
-                        color: #6d7a80;
+                    form {
+                        width: 100%;
+                        input,
+                        .form-btn {
+                            margin: 0;
+                            font-size: 16px;
+                            padding-top: 18px;
+                            padding-bottom: 16px;
+                            border: 1px solid var(--fourth-color);
+                            border-radius: 8px;
+                        }
+                        .form-btn {
+                            margin-top: 16px;
+                            margin-bottom: 71px;
+                        }
+                        span {
+                            margin: 0;
+                            color: #6d7a80;
+                        }
                     }
                 }
             }
+
             .right-content {
                 width: 100%;
                 margin: 40.78px 0 0 0;
@@ -152,18 +150,57 @@
             }
         }
     }
+    .container.store {
+        .row {
+            .chrome {
+                margin: 32px 0 16px 0;
+            }
+            .apple {
+                margin: 0 0 16px 0;
+            }
+            .apple-reviews {
+                margin: 0 0 32px 0;
+            }
+            .apple-reviews {
+                width: 100%;
+                .star {
+                    width: 16.83px;
+                    margin-right: 4px;
+                    padding: 0;
+                }
+                .reviews {
+                    font-size: 16px;
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
     .container.footer {
         .row {
-            padding: 0 32px 0 32px;
             .left-column {
+                margin: 0;
+                padding: 0;
                 width: 100%;
+                .logo-container {
+                    width: 100%;
+                }
                 .desciption {
                     width: 100%;
+                    margin: 0;
+                }
+                .copyright-desktop {
+                    display: none;
                 }
             }
             .middle-column {
+                margin: 0;
+                padding: 0;
+                width: 100%;
             }
             .right-column {
+                margin: 0;
+                padding: 0;
+                width: 100%;
             }
         }
     }
