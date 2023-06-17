@@ -8,17 +8,6 @@
     }
 }
 
-// @media (max-width: 375px) {
-//     .container {
-//         padding-left: 20px;
-//         padding-right: 20px;
-//         .row {
-//             width: 100%;
-//             margin: 0;
-//         }
-//     }
-// }
-
 @media (max-width: 375px) {
     .container.header,
     .container.main,
@@ -96,7 +85,6 @@
                     }
                 }
             }
-
             .right-content {
                 width: 100%;
                 margin: 40.78px 0 0 0;
@@ -108,6 +96,8 @@
                     width: 100%;
                     height: auto;
                     display: flex;
+                    margin: 0;
+                    padding: 0;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
@@ -122,11 +112,13 @@
                         }
                     }
                     .description {
+                        margin: 0;
                         width: 100%;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
+                        text-align: center;
                         span {
                             font-size: 16px;
                             margin-bottom: 16px;
@@ -137,9 +129,9 @@
                         }
                         p {
                             font-size: 16px;
-                            margin-bottom: 44.78px;
+                            margin: 0 0 44.78px 0;
                             width: 100%;
-                            text-align: center;
+                            // text-align: center;
                         }
                     }
                 }
@@ -163,6 +155,7 @@
             }
             .apple-reviews {
                 width: 100%;
+                padding-left: 30.92px;
                 .star {
                     width: 16.83px;
                     margin-right: 4px;
@@ -219,7 +212,7 @@
                     width: 100%;
                     padding-left: 16px;
                     .icon-container {
-                        width: 100%;
+                        width: 192px;
                     }
                 }
             }

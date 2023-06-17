@@ -9,16 +9,13 @@
             width: 128px;
         }
     }
-}
-
-.description {
-    font-size: 20px;
-}
-
-.description > span {
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 32px;
+    .description {
+        font-size: 20px;
+        span {
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 32px;
+        }
+    }
 }

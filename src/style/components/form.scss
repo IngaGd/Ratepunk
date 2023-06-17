@@ -20,6 +20,11 @@
     form {
         display: grid;
         grid-template-columns: 1fr;
+        span {
+            font-size: 16px;
+            margin-bottom: 63px;
+            color: #6d7a80;
+        }
         input {
             padding-left: 60px;
             margin-bottom: 16px;
@@ -48,13 +53,5 @@
             margin-bottom: 153px;
             text-transform: capitalize;
         }
-    }
-}
-
-form {
-    span {
-        font-size: 16px;
-        margin-bottom: 63px;
-        color: #6d7a80;
     }
 }
