@@ -17,7 +17,7 @@ export default function InfoSteps() {
                     <p>Refer friends with your unique referral link.</p>
                 </div>
             </div>
-            <div className="step">
+            <div className="step img-left">
                 <div className="description left">
                     <span>STEP 2</span>
                     <h2>COLLECT COINS</h2>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/components/form.scss';
+import envelopeImg from '../assets/email.svg';
 
 export default function Form() {
     return (
@@ -13,7 +14,7 @@ export default function Form() {
             <form action="/">
                 <div className="cell-1">
                     <label htmlFor="email"></label>
-                    <i class="fa fa-envelope-o"></i>
+                    <img className="envelope-img" src={envelopeImg} alt="" />
                     <input
                         id="email"
                         type="email"
