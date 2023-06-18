@@ -8,7 +8,7 @@ export default function InfoSteps() {
     return (
         <>
             <div className="step">
-                <div className="img">
+                <div className="img left">
                     <img src={img1} alt="Invitation envelope" />
                 </div>
                 <div className="description">
@@ -17,7 +17,7 @@ export default function InfoSteps() {
                     <p>Refer friends with your unique referral link.</p>
                 </div>
             </div>
-            <div className="step img-left">
+            <div className="step img-right">
                 <div className="description">
                     <span>STEP 2</span>
                     <h2>COLLECT COINS</h2>
@@ -26,12 +26,12 @@ export default function InfoSteps() {
                         using your referral link.
                     </p>
                 </div>
-                <div className="img">
+                <div className="img rigth">
                     <img src={img2} alt="Hand holding a coin" />
                 </div>
             </div>
             <div className="step">
-                <div className="img">
+                <div className="img left">
                     <img src={img3} alt="Gift voucher" />
                 </div>
                 <div className="description">
