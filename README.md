@@ -1,3 +1,11 @@
+Additional tools used in this project:
+
+-   react router dom
+-   axios
+
+Link to gh-page:
+[https://ingagd.github.io/ratepunk/]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
