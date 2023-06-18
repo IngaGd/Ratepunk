@@ -4,8 +4,16 @@ import '../style/components/header.scss';
 import Logo from './Logo';
 
 import menuImg from '../assets/menu.svg';
+import closeImg from '../assets/close.svg';
+import { useState } from 'react';
 
 export default function Header() {
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+    const swithDropdown = () => {
+        setDropdownOpen((currentState) => !currentState);
+    };
+
     return (
         <>
             <div className="nav-desktop">
@@ -34,13 +42,16 @@ export default function Header() {
                 </div>
 
                 <div className="nav-link">
-                    <button className="link">
-                        <img src={menuImg} alt="menu bar icon" />
+                    <button className="link" onClick={swithDropdown}>
+                        <img
+                            src={isDropdownOpen ? closeImg : menuImg}
+                            alt="menu bar icon"
+                        />
                     </button>
-                    <div className="dropdown">
+                    <div className={`dropdown ${isDropdownOpen ? 'open' : ''}`}>
                         <div className="link-drop">
                             <Link className="link" to="/chrome-extension">
-                                <span>Chrome extension</span>
+                                Chrome extension
                             </Link>
                         </div>
 
