@@ -59,21 +59,21 @@ export default function Footer() {
                 <div className="lower-content">
                     <h3>Social</h3>
                     <div className="icon-container">
-                        <button className="icons">
+                        <a href="#" className="icons">
                             <img src={icon1} alt="instagram icon" />
-                        </button>
-                        <button className="icons">
+                        </a>
+                        <a href="#" className="icons">
                             <img src={icon2} alt="facebook icon" />
-                        </button>
-                        <button className="icons">
+                        </a>
+                        <a href="#" className="icons">
                             <img src={icon3} alt="linkedin icon" />
-                        </button>
-                        <button className="icons">
+                        </a>
+                        <a href="#" className="icons">
                             <img src={icon4} alt="twitter icon" />
-                        </button>
-                        <button className="icons">
+                        </a>
+                        <a href="#" className="icons">
                             <img src={icon5} alt="tiktok icon" />
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ export default function PriceComparison() {
     return (
         <>
             <div className="container header">
-                <div className="row">
+                <div className="row header">
                     <Header />
                 </div>
             </div>
