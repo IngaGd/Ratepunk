@@ -32,7 +32,6 @@
                 display: none;
             }
             .nav-mob {
-                padding-top: 0;
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
@@ -139,6 +138,11 @@
                         span {
                             margin: 0;
                             color: #6d7a80;
+                        }
+                        .cell-1 {
+                            .envelope-img {
+                                padding-top: 18px;
+                            }
                         }
                     }
                 }

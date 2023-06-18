@@ -72,7 +72,11 @@ export default function Form() {
             <form onSubmit={handleSubmit}>
                 <div className="cell-1">
                     <label htmlFor="email"></label>
-                    <img className="envelope-img" src={envelopeImg} alt="" />
+                    <img
+                        className="envelope-img"
+                        src={envelopeImg}
+                        alt="envelope"
+                    />
                     <input
                         id="email"
                         type="email"
