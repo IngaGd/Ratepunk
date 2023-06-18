@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ratepunk/static/css/main.3d675898.css",
-    "main.js": "/ratepunk/static/js/main.6bed7668.js",
+    "main.css": "/ratepunk/static/css/main.90348e9a.css",
+    "main.js": "/ratepunk/static/js/main.05e8725b.js",
     "static/media/logo.svg": "/ratepunk/static/media/logo.13931bb077187a88f599ced58eacc49d.svg",
     "static/media/voucher.svg": "/ratepunk/static/media/voucher.432e5e9af3f7fcaeb1255592c606efd8.svg",
     "static/media/chrome.svg": "/ratepunk/static/media/chrome.70fb8aec92750f071246d8e35caa4dd6.svg",
@@ -9,18 +9,21 @@
     "static/media/invite.svg": "/ratepunk/static/media/invite.aec246eb41d62e532a3a6429cef86892.svg",
     "static/media/email.svg": "/ratepunk/static/media/email.ab22692fe97718c6f01c502e79a9f7b1.svg",
     "static/media/apple.svg": "/ratepunk/static/media/apple.d47240eb3448febc3997b1839b889057.svg",
+    "static/media/menu.svg": "/ratepunk/static/media/menu.096824f569559b485c4e161dc57b61ec.svg",
     "index.html": "/ratepunk/index.html",
+    "static/media/success.svg": "/ratepunk/static/media/success.b66931b15bdf1e4a9a128ddb20463e69.svg",
+    "static/media/close.svg": "/ratepunk/static/media/close.dadf81556d00524cd25b0c55fb96be45.svg",
     "static/media/instagram.svg": "/ratepunk/static/media/instagram.4535d4de8b72d825b1bd5de39c20999f.svg",
     "static/media/tiktok.svg": "/ratepunk/static/media/tiktok.e7f3c107ca432c5fa57243328d0787cf.svg",
     "static/media/twitter.svg": "/ratepunk/static/media/twitter.59c965c37cee1b89d81c775896d6bd4b.svg",
     "static/media/email-footer.svg": "/ratepunk/static/media/email-footer.75de7883987b7ead4e8353bf7805e1a0.svg",
     "static/media/linkedin.svg": "/ratepunk/static/media/linkedin.ba6a37f2054204d43fa831c05e64d817.svg",
     "static/media/facebook.svg": "/ratepunk/static/media/facebook.9bac76ee604ca7917ad97e5ae6afaa26.svg",
-    "main.3d675898.css.map": "/ratepunk/static/css/main.3d675898.css.map",
-    "main.6bed7668.js.map": "/ratepunk/static/js/main.6bed7668.js.map"
+    "main.90348e9a.css.map": "/ratepunk/static/css/main.90348e9a.css.map",
+    "main.05e8725b.js.map": "/ratepunk/static/js/main.05e8725b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d675898.css",
-    "static/js/main.6bed7668.js"
+    "static/css/main.90348e9a.css",
+    "static/js/main.05e8725b.js"
   ]
 }
