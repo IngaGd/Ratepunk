@@ -13,6 +13,20 @@
     border-radius: 16px;
     color: var(--third-color);
     text-decoration: none;
+    .description {
+        margin-left: 20px;
+        p,
+        h5 {
+            margin: 0;
+        }
+        p {
+            font-size: 16px;
+        }
+        h5 {
+            font-size: 20px;
+            font-family: var(--third-font-family);
+        }
+    }
 }
 
 .chrome {
@@ -28,32 +42,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-}
-
-.icon {
-    .store {
-        width: 48px;
-    }
-}
-
-.description {
-    margin-left: 20px;
-    p,
-    h5 {
-        margin: 0;
-    }
-}
-
-p {
-    font-size: 16px;
-}
-
-h5 {
-    font-size: 20px;
-    font-family: var(--third-font-family);
-}
-
-.apple-reviews {
     color: var(--third-color);
     .star {
         color: var(--third-color);
@@ -67,9 +55,8 @@ h5 {
     }
 }
 
-@media (max-width: 375px) {
-    .chrome,
-    .apple {
-        width: 100%;
+.icon {
+    .store {
+        width: 48px;
     }
 }

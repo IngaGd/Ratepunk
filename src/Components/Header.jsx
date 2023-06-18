@@ -10,6 +10,11 @@ export default function Header() {
                 <Link className="logo" to="/ratepunk">
                     <Logo />
                 </Link>
+                {/* <div className="nav-mob">
+                    <button class="link">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div> */}
             </div>
             <div className="right">
                 <div className="nav-desktop">
@@ -22,11 +27,6 @@ export default function Header() {
                     <Link className="link" to="/blog">
                         Blog
                     </Link>
-                </div>
-                <div className="nav-mob">
-                    <button class="link">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </button>
                 </div>
             </div>
         </>

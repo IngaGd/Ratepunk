@@ -33,19 +33,3 @@ span {
     display: flex;
     justify-content: space-between;
 }
-
-@media (max-width: 375px) {
-    .container.header {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .row {
-        justify-content: space-between;
-    }
-    .nav-desktop {
-        display: none;
-    }
-    .nav-mob {
-        display: flex;
-    }
-}

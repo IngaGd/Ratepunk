@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <div className="container header">
-                <div className="row">
+                <div className="row header">
                     <Header />
                 </div>
             </div>

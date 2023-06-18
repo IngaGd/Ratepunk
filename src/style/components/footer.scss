@@ -1,4 +1,4 @@
-.left-content {
+.left-column {
     width: 672px;
     display: flex;
     flex-direction: column;
@@ -6,14 +6,17 @@
     .desciption {
         margin-top: 32px;
         width: 544px;
+        font-size: 16px;
+        letter-spacing: 0;
     }
     .copyright-desktop {
         margin-top: 46px;
         margin-bottom: 58px;
+        color: #6d7a80;
     }
 }
 
-.middle-content {
+.middle-column {
     width: 256px;
     margin-top: 65px;
     h3 {
@@ -31,7 +34,7 @@
     }
 }
 
-.right-content {
+.right-column {
     width: 192px;
     margin-top: 65px;
     h3 {
@@ -72,19 +75,5 @@
 
 .copyright-mob {
     display: none;
-}
-
-@media (max-width: 375px) {
-    .left-content {
-        width: 100%;
-    }
-    .middle-content {
-        width: 138px;
-    }
-    .copyright-desktop {
-        display: none;
-    }
-    .copyright-mob {
-        display: contents;
-    }
+    color: #6d7a80;
 }
