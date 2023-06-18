@@ -51,17 +51,19 @@ export default function Form() {
                 give you 1 coin for each friend that installs our extension.
                 Minimum cash-out at 20 coins.
             </p>
-            {error && (
-                <div className="error">
-                    <span>{error}</span>
-                </div>
-            )}
-            {message && (
-                <div className="success">
-                    <img src={successImg} alt="Success" />
-                    <span>{message}</span>
-                </div>
-            )}
+            <div className="messages">
+                {error && (
+                    <div className="error">
+                        <span>{error}</span>
+                    </div>
+                )}
+                {message && (
+                    <div className="success">
+                        <img src={successImg} alt="Success" />
+                        <span>{message}</span>
+                    </div>
+                )}
+            </div>
             <form onSubmit={handleSubmit}>
                 <div className="cell-1">
                     <label htmlFor="email"></label>
