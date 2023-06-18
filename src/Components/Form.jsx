@@ -21,7 +21,10 @@ export default function Form() {
         e.preventDefault();
         if (!isValidEmail(email)) {
             setError('Please enter a valid email.');
-            setTimeout(() => setError(null), 2000);
+            setTimeout(() => {
+                setError(null);
+                setEmail('');
+            }, 2000);
             return;
         }
         setError(null);
@@ -40,11 +43,17 @@ export default function Form() {
             )
             .then(() => {
                 setMessage('Your email is confirmed!');
-                setTimeout(() => setMessage(null), 2000);
+                setTimeout(() => {
+                    setMessage(null);
+                    setEmail('');
+                }, 2000);
             })
             .catch(() => {
                 setError('Failed to save email.');
-                setTimeout(() => setError(null), 2000);
+                setTimeout(() => {
+                    setError(null);
+                    setEmail('');
+                }, 2000);
             });
     }
 
