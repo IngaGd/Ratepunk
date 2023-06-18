@@ -14,15 +14,14 @@ export default function Form() {
         const regExp =
             /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         const isValid = regExp.test(String(email).toLocaleLowerCase());
-        console.log('isvalid:', isValid);
         return isValid;
     }
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log('From submited');
         if (!isValidEmail(email)) {
             setError('Please enter a valid email.');
+            setTimeout(() => setError(null), 2000);
             return;
         }
         setError(null);
@@ -39,8 +38,14 @@ export default function Form() {
                     },
                 }
             )
-            .then(() => setMessage('Your email is confirmed!'))
-            .catch(() => setError('Failed to save email.'));
+            .then(() => {
+                setMessage('Your email is confirmed!');
+                setTimeout(() => setMessage(null), 2000);
+            })
+            .catch(() => {
+                setError('Failed to save email.');
+                setTimeout(() => setError(null), 2000);
+            });
     }
 
     return (
