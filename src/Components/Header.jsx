@@ -23,15 +23,17 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className="right">
-                    <Link className="link" to="/chrome-extension">
-                        <span>Chrome extension</span>
-                    </Link>
-                    <Link className="link" to="/price-comparison">
-                        Price comparison
-                    </Link>
-                    <Link className="link" to="/blog">
-                        Blog
-                    </Link>
+                    <div className="nav-link">
+                        <Link className="link" to="/chrome-extension">
+                            <span>Chrome extension</span>
+                        </Link>
+                        <Link className="link" to="/price-comparison">
+                            Price comparison
+                        </Link>
+                        <Link className="link" to="/blog">
+                            Blog
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="nav-mob">
