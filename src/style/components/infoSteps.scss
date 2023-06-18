@@ -9,6 +9,9 @@
             width: 128px;
         }
     }
+    .img.left {
+        margin-right: 56px;
+    }
     .description {
         font-size: 20px;
         span {
@@ -17,5 +20,10 @@
         h2 {
             font-size: 32px;
         }
+    }
+}
+.step.img-right {
+    .description {
+        width: 260px;
     }
 }

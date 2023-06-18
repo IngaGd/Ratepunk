@@ -163,6 +163,9 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    .img.left {
+                        margin-right: 0;
+                    }
                     .img {
                         width: 100%;
                         margin-bottom: 33.78px;
@@ -193,13 +196,15 @@
                             font-size: 16px;
                             margin: 0 0 44.78px 0;
                             width: 100%;
-                            // text-align: center;
                         }
                     }
                 }
-                .step.img-left {
+                .step.img-right {
                     display: flex;
                     flex-direction: column-reverse;
+                    .description {
+                        width: 100%;
+                    }
                 }
             }
         }
