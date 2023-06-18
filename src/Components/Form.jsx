@@ -9,6 +9,7 @@ export default function Form() {
     const [email, setEmail] = useState('');
     const [error, setError] = useState(null);
     const [message, setMessage] = useState(null);
+    const [submitted, setSubmitted] = useState(false);
 
     function isValidEmail(email) {
         const regExp =
@@ -24,6 +25,7 @@ export default function Form() {
             setTimeout(() => {
                 setError(null);
                 setEmail('');
+                setSubmitted(false);
             }, 2000);
             return;
         }
@@ -43,6 +45,7 @@ export default function Form() {
             )
             .then(() => {
                 setMessage('Your email is confirmed!');
+                setSubmitted(true);
                 setTimeout(() => {
                     setMessage(null);
                     setEmail('');
@@ -53,8 +56,14 @@ export default function Form() {
                 setTimeout(() => {
                     setError(null);
                     setEmail('');
+                    setSubmitted(false);
                 }, 2000);
             });
+    }
+
+    function handleClear() {
+        setEmail('');
+        setSubmitted(false);
     }
 
     return (
@@ -89,19 +98,33 @@ export default function Form() {
                     <input
                         id="email"
                         type="email"
-                        placeholder="Enter your email address"
+                        placeholder={
+                            submitted
+                                ? 'https://ratepunk.com/referral'
+                                : 'Enter your email address'
+                        }
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
                 <div className="cell-1">
-                    <button
-                        className="form-btn"
-                        type="submit"
-                        onClick={handleSubmit}
-                    >
-                        Get referral link
-                    </button>
+                    {submitted ? (
+                        <button
+                            className="copy-btn"
+                            type="button"
+                            onClick={handleClear}
+                        >
+                            Copy
+                        </button>
+                    ) : (
+                        <button
+                            className="form-btn"
+                            type="submit"
+                            onClick={handleSubmit}
+                        >
+                            Get referral link
+                        </button>
+                    )}
                 </div>
                 <span>Limits on max rewards apply.</span>
             </form>
