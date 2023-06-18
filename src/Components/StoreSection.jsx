@@ -9,7 +9,7 @@ export default function StoreSection() {
         <>
             <a
                 className="chrome"
-                href="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/"
+                href="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk"
             >
                 <img className="store" src={chromeStore} alt="" />
                 <div className="description">
