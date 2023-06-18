@@ -39,7 +39,7 @@ export default function Form() {
                     },
                 }
             )
-            .then(() => setMessage('Your email is confirmed'))
+            .then(() => setMessage('Your email is confirmed!'))
             .catch(() => setError('Failed to save email.'));
     }
 
@@ -57,7 +57,7 @@ export default function Form() {
                 </div>
             )}
             {message && (
-                <div className="message">
+                <div className="success">
                     <img src={successImg} alt="Success" />
                     <span>{message}</span>
                 </div>
