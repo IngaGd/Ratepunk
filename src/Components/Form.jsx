@@ -123,17 +123,55 @@ export default function Form() {
                                 </button>
                             )}
                         </div>
+                        <div className="input-group mob">
+                            <input
+                                className={
+                                    !submitted ? 'input-reg' : 'input-subm'
+                                }
+                                id="email"
+                                type="email"
+                                placeholder={
+                                    submitted
+                                        ? 'https://ratepunk.com/referral'
+                                        : 'Enter your email address'
+                                }
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            {/* {submitted && (
+                                <button
+                                    className="copy-btn"
+                                    type="button"
+                                    onClick={handleClear}
+                                >
+                                    Copy
+                                </button>
+                            )} */}
+                        </div>
                     </div>
                 </div>
-                {!submitted && (
+                <div className="web">
+                    {!submitted && (
+                        <button
+                            className="form-btn"
+                            type="submit"
+                            onClick={handleSubmit}
+                        >
+                            Get referral link
+                        </button>
+                    )}
+                </div>
+                <div className="mob">
                     <button
                         className="form-btn"
                         type="submit"
                         onClick={handleSubmit}
                     >
-                        Get referral link
+                        <span>
+                            {submitted ? 'Copy URL' : 'Get referral link'}
+                        </span>
                     </button>
-                )}
+                </div>
                 <span>Limits on max rewards apply.</span>
             </form>
         </div>

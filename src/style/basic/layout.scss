@@ -122,6 +122,9 @@
                     }
                     form {
                         width: 100%;
+                        .web {
+                            display: none;
+                        }
                         input,
                         .form-btn {
                             margin: 0;
