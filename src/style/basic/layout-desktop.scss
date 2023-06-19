@@ -64,7 +64,10 @@
                         .mob {
                             display: none;
                         }
-                        .input-group {
+                        .web {
+                            display: flex;
+                        }
+                        .input-group.web {
                             position: relative;
                             width: 100%;
                             display: flex;
@@ -155,30 +158,46 @@
             align-items: center;
             justify-content: flex-start;
             flex-wrap: wrap;
-            .chrome,
-            .apple {
-                margin: 1.6rem 0.8rem 1.6rem 0;
-            }
-            .description {
-            }
-            .chrome {
-                // margin: 2rem 0 1rem 0;
-            }
-            .apple {
-                // margin: 0 0 1rem 0;
-            }
-            .apple-reviews {
-                // margin: 0 0 2rem 0;
-            }
-            .apple-reviews {
-                .star {
-                    width: 1rem;
-                    margin-right: 0.25rem;
-                    padding: 0;
+            .content {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .stores {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
                 }
-                .reviews {
-                    font-size: var(--font-size-sm);
-                    margin-left: 0.75rem;
+                .chrome,
+                .apple {
+                    margin: 1.6rem 0.8rem 1.6rem 0;
+                }
+                .description {
+                }
+                .chrome {
+                    // margin: 2rem 0 1rem 0;
+                }
+                .apple {
+                    // margin: 0 0 1rem 0;
+                }
+                .apple-reviews {
+                    // margin: 0 0 2rem 0;
+                }
+                .reviews-content {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    .apple-reviews {
+                        .star {
+                            width: 1rem;
+                            margin-right: 0.25rem;
+                            padding: 0;
+                        }
+                        .reviews {
+                            font-size: var(--font-size-sm);
+                            margin-left: 0.75rem;
+                        }
+                    }
                 }
             }
         }
@@ -187,47 +206,6 @@
         .row {
             flex-direction: column;
         }
-        // .row {
-        //     flex-wrap: wrap;
-        //     .copyright-mob {
-        //         display: none;
-        //     }
-        //     .left-column {
-        //         width: calc(672 / 1120 * 100%);
-        //         display: flex;
-        //         flex-direction: column;
-        //         padding: 0;
-        //         margin-left: 0;
-        //         margin-top: 3.2rem;
-        //         .logo-container {
-        //             margin-top: 0;
-        //             margin-left: 0;
-        //             display: inline-block;
-        //         }
-        //         .desciption {
-        //             padding: 0;
-        //             margin-top: 3.2rem;
-        //             width: calc(544 / 672 * 100%);
-        //             font-size: var(--font-size-sm);
-        //             letter-spacing: 0;
-        //         }
-        //         .copyright-desktop {
-        //             display: flex;
-        //             margin-top: 2.3rem;
-        //             margin-bottom: 1.8125rem;
-        //             color: #6d7a80;
-        //             font-size: var(--font-size-sm);
-        //         }
-        //     }
-        //     .middle-column {
-        //         width: calc(256 / 1120 * 100%);
-        //         margin-top: 3.25rem;
-        //     }
-        //     .right-column {
-        //         width: calc(192 / 1120 * 100%);
-        //         margin-top: 3.25rem;
-        //     }
-        // }
     }
 }
 
