@@ -10,7 +10,7 @@
     // }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 280px) {
     .container.header,
     .container.main,
     .container.store,
@@ -86,6 +86,8 @@
         .row {
             .box-form {
                 width: 100%;
+                // min-width: 343px;
+                max-width: 544px;
                 margin: 2rem 0 0 0;
                 display: flex;
                 align-items: center;
