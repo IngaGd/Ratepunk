@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../style/components/form.scss';
-import envelopeImg from '../assets/email.svg';
 import axios from 'axios';
 
 import successImg from '../assets/success.svg';
@@ -9,6 +8,7 @@ export default function Form() {
     const [email, setEmail] = useState('');
     const [error, setError] = useState(null);
     const [message, setMessage] = useState(null);
+    const [submitted, setSubmitted] = useState(false);
 
     function isValidEmail(email) {
         const regExp =
@@ -24,6 +24,7 @@ export default function Form() {
             setTimeout(() => {
                 setError(null);
                 setEmail('');
+                setSubmitted(false);
             }, 2000);
             return;
         }
@@ -43,18 +44,19 @@ export default function Form() {
             )
             .then(() => {
                 setMessage('Your email is confirmed!');
-                setTimeout(() => {
-                    setMessage(null);
-                    setEmail('');
-                }, 2000);
+                setSubmitted(true);
+                setEmail('');
             })
             .catch(() => {
                 setError('Failed to save email.');
-                setTimeout(() => {
-                    setError(null);
-                    setEmail('');
-                }, 2000);
+                setEmail('');
+                setSubmitted(false);
             });
+    }
+
+    function handleClear() {
+        setEmail('');
+        setSubmitted(false);
     }
 
     return (
@@ -80,27 +82,80 @@ export default function Form() {
             </div>
             <form onSubmit={handleSubmit}>
                 <div className="cell-1">
-                    <label htmlFor="email"></label>
-                    <img
-                        className="envelope-img"
-                        src={envelopeImg}
-                        alt="envelope"
-                    />
-                    <input
-                        id="email"
-                        type="email"
-                        placeholder="Enter your email address"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
+                    <div className="input-button-container">
+                        <label htmlFor="email"></label>
+                        {/* <img
+                            className={`envelope-img ${
+                                submitted ? 'hidden' : ''
+                            }`}
+                            src={envelopeImg}
+                            alt="envelope"
+                        /> */}
+                        <div className="input-group web">
+                            <input
+                                submitted={submitted ? 'true' : 'false'}
+                                className={
+                                    !submitted ? 'input-reg' : 'input-subm'
+                                }
+                                id="email"
+                                type="email"
+                                placeholder={
+                                    submitted
+                                        ? 'https://ratepunk.com/referral'
+                                        : 'Enter your email address'
+                                }
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            {submitted && (
+                                <button
+                                    className="copy-btn"
+                                    type="button"
+                                    onClick={handleClear}
+                                >
+                                    Copy
+                                </button>
+                            )}
+                        </div>
+                        <div className="input-group mob">
+                            <input
+                                submitted={submitted ? 'true' : 'false'}
+                                className={
+                                    !submitted ? 'input-reg' : 'input-subm'
+                                }
+                                id="email"
+                                type="email"
+                                placeholder={
+                                    submitted
+                                        ? 'https://ratepunk.com/referral'
+                                        : 'Enter your email address'
+                                }
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </div>
+                    </div>
                 </div>
-                <div className="cell-1">
+                <div className="web">
+                    {!submitted && (
+                        <button
+                            className="form-btn"
+                            type="submit"
+                            onClick={handleSubmit}
+                        >
+                            Get referral link
+                        </button>
+                    )}
+                </div>
+                <div className="mob">
                     <button
                         className="form-btn"
                         type="submit"
                         onClick={handleSubmit}
                     >
-                        Get referral link
+                        <span>
+                            {submitted ? 'Copy URL' : 'Get referral link'}
+                        </span>
                     </button>
                 </div>
                 <span>Limits on max rewards apply.</span>
