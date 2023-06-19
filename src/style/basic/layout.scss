@@ -127,6 +127,22 @@
                         }
                         .mob {
                             display: flex;
+                            button {
+                                span {
+                                    color: var(--third-color);
+                                    font-size: 16px;
+                                }
+                            }
+                            #email {
+                                &::placeholder {
+                                    margin-left: 10px;
+                                }
+                                &[submitted='false'] {
+                                    background: url(../../assets/email.svg)
+                                        no-repeat scroll 16px 20px;
+                                    background-size: 16px;
+                                }
+                            }
                         }
                         input,
                         .form-btn {
@@ -144,11 +160,6 @@
                         span {
                             margin: 0;
                             color: #6d7a80;
-                        }
-                        .cell-1 {
-                            .envelope-img {
-                                padding-top: 18px;
-                            }
                         }
                     }
                 }

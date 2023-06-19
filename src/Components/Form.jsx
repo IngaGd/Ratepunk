@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../style/components/form.scss';
-import envelopeImg from '../assets/email.svg';
 import axios from 'axios';
 
 import successImg from '../assets/success.svg';
@@ -46,18 +45,12 @@ export default function Form() {
             .then(() => {
                 setMessage('Your email is confirmed!');
                 setSubmitted(true);
-                setTimeout(() => {
-                    setMessage(null);
-                    setEmail('');
-                }, 2000);
+                setEmail('');
             })
             .catch(() => {
                 setError('Failed to save email.');
-                setTimeout(() => {
-                    setError(null);
-                    setEmail('');
-                    setSubmitted(false);
-                }, 2000);
+                setEmail('');
+                setSubmitted(false);
             });
     }
 
@@ -91,15 +84,16 @@ export default function Form() {
                 <div className="cell-1">
                     <div className="input-button-container">
                         <label htmlFor="email"></label>
-                        <img
+                        {/* <img
                             className={`envelope-img ${
                                 submitted ? 'hidden' : ''
                             }`}
                             src={envelopeImg}
                             alt="envelope"
-                        />
+                        /> */}
                         <div className="input-group web">
                             <input
+                                submitted={submitted ? 'true' : 'false'}
                                 className={
                                     !submitted ? 'input-reg' : 'input-subm'
                                 }
@@ -125,6 +119,7 @@ export default function Form() {
                         </div>
                         <div className="input-group mob">
                             <input
+                                submitted={submitted ? 'true' : 'false'}
                                 className={
                                     !submitted ? 'input-reg' : 'input-subm'
                                 }
@@ -138,15 +133,6 @@ export default function Form() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
-                            {/* {submitted && (
-                                <button
-                                    className="copy-btn"
-                                    type="button"
-                                    onClick={handleClear}
-                                >
-                                    Copy
-                                </button>
-                            )} */}
                         </div>
                     </div>
                 </div>
