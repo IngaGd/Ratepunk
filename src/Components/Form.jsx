@@ -89,43 +89,51 @@ export default function Form() {
             </div>
             <form onSubmit={handleSubmit}>
                 <div className="cell-1">
-                    <label htmlFor="email"></label>
-                    <img
-                        className="envelope-img"
-                        src={envelopeImg}
-                        alt="envelope"
-                    />
-                    <input
-                        id="email"
-                        type="email"
-                        placeholder={
-                            submitted
-                                ? 'https://ratepunk.com/referral'
-                                : 'Enter your email address'
-                        }
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
+                    <div className="input-button-container">
+                        <label htmlFor="email"></label>
+                        <img
+                            className={`envelope-img ${
+                                submitted ? 'hidden' : ''
+                            }`}
+                            src={envelopeImg}
+                            alt="envelope"
+                        />
+                        <div className="input-group web">
+                            <input
+                                className={
+                                    !submitted ? 'input-reg' : 'input-subm'
+                                }
+                                id="email"
+                                type="email"
+                                placeholder={
+                                    submitted
+                                        ? 'https://ratepunk.com/referral'
+                                        : 'Enter your email address'
+                                }
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            {submitted && (
+                                <button
+                                    className="copy-btn"
+                                    type="button"
+                                    onClick={handleClear}
+                                >
+                                    Copy
+                                </button>
+                            )}
+                        </div>
+                    </div>
                 </div>
-                <div className="cell-1">
-                    {submitted ? (
-                        <button
-                            className="copy-btn"
-                            type="button"
-                            onClick={handleClear}
-                        >
-                            Copy
-                        </button>
-                    ) : (
-                        <button
-                            className="form-btn"
-                            type="submit"
-                            onClick={handleSubmit}
-                        >
-                            Get referral link
-                        </button>
-                    )}
-                </div>
+                {!submitted && (
+                    <button
+                        className="form-btn"
+                        type="submit"
+                        onClick={handleSubmit}
+                    >
+                        Get referral link
+                    </button>
+                )}
                 <span>Limits on max rewards apply.</span>
             </form>
         </div>

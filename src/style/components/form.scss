@@ -38,6 +38,44 @@
     form {
         display: grid;
         grid-template-columns: 1fr;
+        .input-group {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: stretch;
+
+            #email {
+                flex-grow: 1;
+            }
+
+            .copy-btn {
+                position: absolute;
+                right: 0;
+                border-radius: 0 8px 8px 0;
+                border: 1px solid var(--fourth-color);
+                width: 96px;
+                height: 62px;
+                background-color: var(--second-color);
+            }
+        }
+
+        .envelope-img {
+            position: absolute;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+        .input-subm {
+            margin-bottom: 185px;
+            padding-left: 20px;
+            margin-left: 0;
+            &::placeholder {
+                padding-left: -90px;
+            }
+        }
+        input {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
         span {
             font-size: 16px;
             margin-bottom: 63px;
