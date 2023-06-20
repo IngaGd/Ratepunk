@@ -15,16 +15,11 @@ h3 {
 
 /* main-section start*/
 .container.main {
-    background-color: var(--first-color);
-    .box-form {
-        margin-top: 64px;
-        margin-bottom: 64px;
-    }
     .right-content {
         /* width: calc(976px * 100% / 1920px); */
-        margin-left: 128px;
-        margin-top: 128px;
-        margin-bottom: 128px;
+        // margin-left: 128px;
+        // margin-top: 128px;
+        // margin-bottom: 128px;
     }
 }
 
@@ -32,7 +27,6 @@ h3 {
 
 /* store-section start*/
 .container.store {
-    background-color: var(--fifth-color);
 }
 /* store-section end*/
 
