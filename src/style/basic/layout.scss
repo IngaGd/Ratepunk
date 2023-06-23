@@ -339,6 +339,17 @@
                 margin: 48px 0 0 0;
                 padding-left: 16px;
                 width: 100%;
+                .nav-footer {
+                    display: flex;
+                    flex-direction: column;
+                    .link {
+                        margin-top: 0;
+                        margin-bottom: 16px;
+                        text-decoration: none;
+                        font-size: 16px;
+                        color: var(--fourth-color);
+                    }
+                }
             }
             .right-column {
                 margin: 32px 0 0 0;
@@ -352,20 +363,43 @@
                     }
                     .mail {
                         margin-bottom: 2rem;
+                        display: flex;
+                        align-items: center;
+                        a {
+                            text-decoration: none;
+                            color: var(--fourth-color);
+                            font-size: 16px;
+                            margin-left: 16px;
+                        }
+                        // margin-bottom: 69px;
                     }
                 }
                 .lower-content {
                     width: 100%;
                     padding-left: 1rem;
                     .icon-container {
+                        display: flex;
+                        justify-content: space-between;
                         width: 12rem;
+                        margin-top: 1.5rem;
+                        .icons {
+                            width: 32px;
+                            background-color: var(--second-color);
+                            border: var(--border);
+                            border-radius: 8px;
+                            // padding: 8px;
+                            img {
+                                height: 16px;
+                                margin: 7px;
+                            }
+                        }
                     }
                 }
             }
             .copyright-mob {
                 width: 100%;
                 display: flex;
-                margin: 3rem 0 3rem 0;
+                margin: 3rem 0 3rem 2rem;
             }
         }
     }

@@ -155,14 +155,14 @@
     }
     .container.store {
         .row {
-            align-items: center;
-            justify-content: flex-start;
-            flex-wrap: wrap;
+            // align-items: center;
+
             .content {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                flex-wrap: wrap;
                 .stores {
                     width: 100%;
                     display: flex;
@@ -186,8 +186,10 @@
                 .reviews-content {
                     width: 100%;
                     display: flex;
+                    justify-content: center;
                     align-items: center;
                     .apple-reviews {
+                        align-items: center;
                         .star {
                             width: 1rem;
                             margin-right: 0.25rem;
@@ -208,7 +210,7 @@
             .desciption {
                 font-size: var(--font-size-sm);
             }
-            .copyright-desktop {
+            .copyright-mob {
                 font-size: var(--font-size-sm);
             }
         }
@@ -259,11 +261,16 @@
             }
         }
     }
+    .container.store {
+        .row {
+            .content {
+                flex-wrap: nowrap;
+            }
+        }
+    }
     .container.footer {
         .row {
             flex-direction: row;
-        }
-        .row {
             flex-wrap: wrap;
             .copyright-mob {
                 display: none;
@@ -291,15 +298,46 @@
                     margin-top: 2.3rem;
                     margin-bottom: 1.8125rem;
                     color: #6d7a80;
+                    font-size: var(--font-size-sm);
                 }
             }
             .middle-column {
                 width: calc(256 / 1120 * 100%);
-                margin-top: 3.25rem;
+                margin-top: 0;
             }
             .right-column {
                 width: calc(192 / 1120 * 100%);
-                margin-top: 3.25rem;
+                margin-top: 0;
+                padding-top: 0;
+                h3 {
+                    margin-bottom: 1.2rem;
+                }
+                .mail {
+                    // display: flex;
+                    // align-items: center;
+                    a {
+                        // text-decoration: none;
+                        // color: var(--fourth-color);
+                        // font-size: 16px;
+                        // margin-left: 16px;
+                    }
+                    margin-bottom: 3.45rem;
+                }
+                .lower-content {
+                    .icon-container {
+                        // display: flex;
+                        // justify-content: space-between;
+                        .icons {
+                            img {
+                                // height: 16px;
+                                // margin: 7px;
+                            }
+                        }
+                        .icons:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
         }
     }
