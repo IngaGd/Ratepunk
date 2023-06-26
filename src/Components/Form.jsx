@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../style/components/form.scss';
 import axios from 'axios';
 
 import successImg from '../assets/success.svg';
