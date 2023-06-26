@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ratepunk/static/css/main.cbf01f16.css",
-    "main.js": "/ratepunk/static/js/main.f734c870.js",
+    "main.css": "/ratepunk/static/css/main.30304cb9.css",
+    "main.js": "/ratepunk/static/js/main.7521117d.js",
     "static/media/logo.svg": "/ratepunk/static/media/logo.13931bb077187a88f599ced58eacc49d.svg",
     "static/media/voucher.svg": "/ratepunk/static/media/voucher.432e5e9af3f7fcaeb1255592c606efd8.svg",
     "static/media/chrome.svg": "/ratepunk/static/media/chrome.70fb8aec92750f071246d8e35caa4dd6.svg",
@@ -19,11 +19,11 @@
     "static/media/email-footer.svg": "/ratepunk/static/media/email-footer.75de7883987b7ead4e8353bf7805e1a0.svg",
     "static/media/linkedin.svg": "/ratepunk/static/media/linkedin.ba6a37f2054204d43fa831c05e64d817.svg",
     "static/media/facebook.svg": "/ratepunk/static/media/facebook.9bac76ee604ca7917ad97e5ae6afaa26.svg",
-    "main.cbf01f16.css.map": "/ratepunk/static/css/main.cbf01f16.css.map",
-    "main.f734c870.js.map": "/ratepunk/static/js/main.f734c870.js.map"
+    "main.30304cb9.css.map": "/ratepunk/static/css/main.30304cb9.css.map",
+    "main.7521117d.js.map": "/ratepunk/static/js/main.7521117d.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbf01f16.css",
-    "static/js/main.f734c870.js"
+    "static/css/main.30304cb9.css",
+    "static/js/main.7521117d.js"
   ]
 }
