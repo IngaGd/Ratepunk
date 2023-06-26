@@ -1,36 +1,18 @@
 .container.header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    // padding-top: 24px;
+    // padding-bottom: 24px;
     .row {
-        justify-content: space-between;
+        // justify-content: space-between;
         .nav-desktop {
-            width: 100%;
-            display: flex;
+            // width: 100%;
+            // display: flex;
             .left,
             .right {
-                width: 50%;
-            }
-            .right {
-                .nav-link {
-                    display: flex;
-                    justify-content: space-between;
-                    .link {
-                        text-transform: capitalize;
-                        text-decoration: none;
-                        font-size: 20px;
-                        color: var(--sixth-color);
-                        span {
-                            color: var(--second-color);
-                        }
-                        .link:active {
-                            color: var(--second-color);
-                        }
-                    }
-                }
+                // width: 50%;
             }
         }
         .nav-mob {
-            display: none;
+            // display: none;
         }
     }
 }

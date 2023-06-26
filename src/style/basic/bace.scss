@@ -10,9 +10,14 @@
     --main-font-family: 'Noto Sans', sans-serif;
     --second-font-family: 'Caveat Brush', cursive;
     --third-font-family: 'gadugi', sans-serif;
+    --font-size-sm: 16px;
+    --font-size-lg: 20px;
+    --border: 1px solid var(--fourth-color);
+    --row-width-lg: calc((1120 / 1920) * 100%);
 }
 html {
     scroll-behavior: smooth;
+    font-size: var(--font-size-sm);
 }
 
 body,
@@ -26,5 +31,6 @@ body * {
 body {
     font-family: var(--main-font-family);
     color: var(--fourth-color);
-    letter-spacing: 0.5px;
+    font-size: 1rem;
+    // letter-spacing: 0.5px;
 }

@@ -17,11 +17,11 @@ export default function Home() {
             </div>
             <div className="container main">
                 <div className="row">
-                    <div className="left-content">
+                    <div className="content">
                         <Form />
-                    </div>
-                    <div className="right-content">
-                        <InfoSteps />
+                        <div className="right-content">
+                            <InfoSteps />
+                        </div>
                     </div>
                 </div>
             </div>
