@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style/components/infoSteps.scss';
 import img1 from '../assets/invite.svg';
 import img2 from '../assets/collect-coins.svg';
 import img3 from '../assets/voucher.svg';

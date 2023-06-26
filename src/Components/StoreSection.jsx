@@ -1,6 +1,4 @@
 import React from 'react';
-import '../style/components/storeSection.scss';
-
 import chromeStore from '../assets/chrome.svg';
 import appleStore from '../assets/apple.svg';
 

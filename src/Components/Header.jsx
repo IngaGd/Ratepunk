@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../style/components/header.scss';
 import Logo from './Logo';
 
 import menuImg from '../assets/menu.svg';
@@ -37,20 +36,24 @@ export default function Header() {
                 </div>
             </div>
             <div className="nav-mob">
-                <div className="nav-link">
+                <div className="logo">
                     <Link className="logo" to="/ratepunk">
                         <Logo />
                     </Link>
                 </div>
 
-                <div className="nav-link">
+                <div className="dropdown">
                     <button className="link" onClick={swithDropdown}>
                         <img
                             src={isDropdownOpen ? closeImg : menuImg}
                             alt="menu bar icon"
                         />
                     </button>
-                    <div className={`dropdown ${isDropdownOpen ? 'open' : ''}`}>
+                    <div
+                        className={`dropdown-menu ${
+                            isDropdownOpen ? 'open' : ''
+                        }`}
+                    >
                         <div className="link-drop">
                             <Link className="link" to="/chrome-extension">
                                 Chrome extension

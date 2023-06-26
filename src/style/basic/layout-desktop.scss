@@ -10,7 +10,6 @@
         .row {
             flex-direction: row;
             width: var(--row-width-lg);
-            // margin-left: calc(50% - var(--row-width-lg) / 2);
             margin-left: auto;
             margin-right: auto;
         }
@@ -18,19 +17,15 @@
     .container.main {
         .row {
             display: flex;
-            // flex-direction: column;
             .content {
                 width: 100%;
                 display: flex;
-                // justify-content: flex-start;
                 align-items: center;
                 justify-content: center;
                 margin: 0;
                 padding: 0;
-                // justify-content: space-between;
                 flex-wrap: wrap;
                 .box-form {
-                    // width: calc(544 / 1120 * 100%);
                     width: 100%;
                     min-width: 343px;
                     padding-top: 3.2rem;
@@ -81,6 +76,7 @@
                                 &::placeholder {
                                     color: #6d7a80;
                                     letter-spacing: 0px;
+                                    font-size: var(--font-size-sm);
                                 }
                                 &[submitted='false'] {
                                     background: url(../../assets/email.svg)
@@ -145,6 +141,7 @@
                     flex-direction: row;
                     .description {
                         width: 100%;
+                        font-size: var(--font-size-lg);
                     }
                 }
                 .step.img-right {
@@ -155,8 +152,6 @@
     }
     .container.store {
         .row {
-            // align-items: center;
-
             .content {
                 width: 100%;
                 display: flex;
@@ -171,17 +166,6 @@
                 .chrome,
                 .apple {
                     margin: 1.6rem 0.8rem 1.6rem 0;
-                }
-                .description {
-                }
-                .chrome {
-                    // margin: 2rem 0 1rem 0;
-                }
-                .apple {
-                    // margin: 0 0 1rem 0;
-                }
-                .apple-reviews {
-                    // margin: 0 0 2rem 0;
                 }
                 .reviews-content {
                     width: 100%;
@@ -313,26 +297,10 @@
                     margin-bottom: 1.2rem;
                 }
                 .mail {
-                    // display: flex;
-                    // align-items: center;
-                    a {
-                        // text-decoration: none;
-                        // color: var(--fourth-color);
-                        // font-size: 16px;
-                        // margin-left: 16px;
-                    }
                     margin-bottom: 3.45rem;
                 }
                 .lower-content {
                     .icon-container {
-                        // display: flex;
-                        // justify-content: space-between;
-                        .icons {
-                            img {
-                                // height: 16px;
-                                // margin: 7px;
-                            }
-                        }
                         .icons:hover {
                             cursor: pointer;
                         }
@@ -347,7 +315,6 @@
     .container.main {
         .row {
             display: flex;
-            // flex-direction: column;
             .content {
                 justify-content: flex-start;
                 justify-content: space-between;
@@ -359,13 +326,11 @@
                 width: 40%;
                 margin-left: calc(100 / 1120 * 100%);
             }
-        }
-    }
-}
-
-@media (min-width: 1600px) {
-    .container.main {
-        .row {
+            #email {
+                &::placeholder {
+                    font-size: var(--font-size-lg);
+                }
+            }
         }
     }
 }
